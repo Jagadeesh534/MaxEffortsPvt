@@ -63,7 +63,7 @@ const App = () => {
       
       {/* Footer */}
       <footer className="bg-black text-center py-3">
-        <p className="mb-0">&copy; 2025 Digikore Inspired Design. All Rights Reserved.</p>
+        <p className="mb-0">&copy; 2025 Maximum Efforts VFX Pvt. Ltd. All Rights Reserved.</p>
       </footer>
 
       
