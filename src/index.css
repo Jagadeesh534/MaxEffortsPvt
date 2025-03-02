@@ -1,0 +1,33 @@
+:root{
+  font-family: Montserrat Alternates, Sans-serif;
+}
+
+.nav-bar{
+  background: rgba(0, 0, 0, 0) !important
+}
+
+@media (max-width: 991px) {
+  .nav-slide {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: black;
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+  }
+  .nav-slide.open {
+    right: 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

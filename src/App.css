@@ -1,0 +1,13 @@
+.section-background { 
+  background: url('./assets/lady.webp') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .section-background{
+    background: url(/src/assets/lady.webp) no-repeat center center / cover;
+    background-position: top !important;
+  }
+}
