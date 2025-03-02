@@ -22,9 +22,9 @@
   }
   .close-btn {
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 15px;
-    background: transparent;
+    background: none;
     border: none;
     color: white;
     font-size: 24px;

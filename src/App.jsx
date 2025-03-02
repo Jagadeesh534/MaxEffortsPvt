@@ -26,6 +26,7 @@ const App = () => {
         </Navbar.Collapse>
         {/* Mobile Nav */}
         <div className={`nav-slide d-lg-none ${showNav ? "open" : ""}`} id="basic-navbar-nav">
+          <button className="close-btn" onClick={() => setShowNav(false)}>✖</button>
           <Nav className="d-flex flex-column text-center">
             <Nav.Link href="#" className="text-white">Home</Nav.Link>
             <Nav.Link href="#" className="text-white">About</Nav.Link>
