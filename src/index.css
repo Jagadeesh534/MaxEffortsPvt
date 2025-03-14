@@ -2,10 +2,6 @@
   font-family: Montserrat Alternates, Sans-serif;
 }
 
-.nav-bar{
-  background: rgba(0, 0, 0, 0) !important
-}
-
 @media (max-width: 991px) {
   .nav-slide {
     position: fixed;
