@@ -37,7 +37,8 @@ const App = () => {
       {/* Navbar */}
       <Navbar expand="lg" className="navbar-dark px-3 fixed-top">
         <Navbar.Brand href="#" className="text-white fw-bold">
-          Maximum Efforts FX
+          Maximum Efforts <br />
+          Fx Studios
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -52,18 +53,19 @@ const App = () => {
               Home
             </Nav.Link>
             <Nav.Link
+              onClick={() => scrollToSection("about")}
+              className="text-white"
+            >
+              About
+            </Nav.Link>
+
+            <Nav.Link
               onClick={() => scrollToSection("services")}
               className="text-white"
             >
               Services
             </Nav.Link>
 
-            <Nav.Link
-              onClick={() => scrollToSection("about")}
-              className="text-white"
-            >
-              About
-            </Nav.Link>
             <Nav.Link
               onClick={() => scrollToSection("work")}
               className="text-white"
@@ -94,18 +96,19 @@ const App = () => {
               Home
             </Nav.Link>
             <Nav.Link
+              onClick={() => scrollToSection("about")}
+              className="text-white"
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
               onClick={() => scrollToSection("services")}
               className="text-white"
             >
               Services
             </Nav.Link>
 
-            <Nav.Link
-              onClick={() => scrollToSection("about")}
-              className="text-white"
-            >
-              About
-            </Nav.Link>
+            
             <Nav.Link
               onClick={() => scrollToSection("work")}
               className="text-white"
@@ -130,6 +133,52 @@ const App = () => {
         <h1 className="display-4 fw-bold text-center text-overlay">
           Experience the Future of VFX
         </h1>
+      </section>
+      <section
+        id="about"
+        className="py-5 text-center"
+        style={{ paddingTop: "80px" }}
+      >
+        <Container>
+          <h2 className="mb-4 mt-2">About Us</h2>
+          <p>
+            Maximum Efforts FX Studios is an India-based creative visual effects
+            studio specializing in high-quality outsourcing services for films,
+            television, and advertisements. Our team consists of some of the
+            best minds in the industry, with expertise in all technological and
+            functional aspects of VFX. We excel in Rotoscopy, Paint/Prep,
+            Matchmove, and Compositing.
+          </p>
+          <p>
+            With great attention to detail, we bring your expectations to
+            reality. Combining creativity and passion, we deliver impeccable VFX
+            services without compromising on quality. We value your project
+            ideas and treat every creative concept with the same enthusiasm,
+            regardless of technical complexity. Our passion is reflected in our
+            work, attitude, and commitment to delivering exceptional results on
+            time, even under tight deadlines. We are continuously expanding our
+            services worldwide.
+          </p>
+          <h4 className="mt-4">Why Partner with Us?</h4>
+          <ul className="text-start d-inline-block">
+            <li>
+              We ensure complete data security, keeping all client information
+              protected from potential threats.
+            </li>
+            <li>
+              Cost-effective solutions with an efficient production pipeline.
+            </li>
+            <li>We bring your vision to life with precision and creativity.</li>
+            <li>
+              Our team consists of highly skilled, creative, and passionate
+              artists.
+            </li>
+            <li>
+              24/7 technical assistance to ensure seamless workflow and client
+              support.
+            </li>
+          </ul>
+        </Container>
       </section>
       <section id="services" className="py-5 text-center">
         
@@ -194,52 +243,7 @@ const App = () => {
           </Row>
         </Container>
       </section>
-      <section
-        id="about"
-        className="py-5 text-center"
-        style={{ paddingTop: "80px" }}
-      >
-        <Container>
-          <h2 className="mb-4 mt-2">About Us</h2>
-          <p>
-            Maximum Efforts FX Studios is an India-based creative visual effects
-            studio specializing in high-quality outsourcing services for films,
-            television, and advertisements. Our team consists of some of the
-            best minds in the industry, with expertise in all technological and
-            functional aspects of VFX. We excel in Rotoscopy, Paint/Prep,
-            Matchmove, and Compositing.
-          </p>
-          <p>
-            With great attention to detail, we bring your expectations to
-            reality. Combining creativity and passion, we deliver impeccable VFX
-            services without compromising on quality. We value your project
-            ideas and treat every creative concept with the same enthusiasm,
-            regardless of technical complexity. Our passion is reflected in our
-            work, attitude, and commitment to delivering exceptional results on
-            time, even under tight deadlines. We are continuously expanding our
-            services worldwide.
-          </p>
-          <h4 className="mt-4">Why Partner with Us?</h4>
-          <ul className="text-start d-inline-block">
-            <li>
-              We ensure complete data security, keeping all client information
-              protected from potential threats.
-            </li>
-            <li>
-              Cost-effective solutions with an efficient production pipeline.
-            </li>
-            <li>We bring your vision to life with precision and creativity.</li>
-            <li>
-              Our team consists of highly skilled, creative, and passionate
-              artists.
-            </li>
-            <li>
-              24/7 technical assistance to ensure seamless workflow and client
-              support.
-            </li>
-          </ul>
-        </Container>
-      </section>
+  
 
       <section
         id="work"
