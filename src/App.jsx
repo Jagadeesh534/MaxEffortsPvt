@@ -108,7 +108,6 @@ const App = () => {
               Services
             </Nav.Link>
 
-            
             <Nav.Link
               onClick={() => scrollToSection("work")}
               className="text-white"
@@ -142,12 +141,14 @@ const App = () => {
         <Container>
           <h2 className="mb-4 mt-2">About Us</h2>
           <p>
-            Maximum Efforts FX Studios is an India-based creative visual effects
-            studio specializing in high-quality outsourcing services for films,
-            television, and advertisements. Our team consists of some of the
-            best minds in the industry, with expertise in all technological and
-            functional aspects of VFX. We excel in Rotoscopy, Paint/Prep,
-            Matchmove, and Compositing.
+            Maximum Efforts Fx studios established in 2023 and managed by ALLAM
+            MAHENDRA, It is an Indian based creative visual effects studio that
+            specializes in providing high quality outsourcing services for
+            Films, Television & Advertisements. The studio is driven by some of
+            the best minds from the industry, who have been expertise in all the
+            technological and functional aspects in this industry. We are
+            specialized in doing any kind of Rotoscopy, Paint/Prep, Matchmove
+            and Compositing
           </p>
           <p>
             With great attention to detail, we bring your expectations to
@@ -181,16 +182,15 @@ const App = () => {
         </Container>
       </section>
       <section id="services" className="py-5 text-center">
-        
         <Container>
           <h2 className="mb-4">Our Services</h2>
           <p>
-          Maximum Efforts Fx Studio Visual Effects Studio is a vfx outsourcing
-          service provider for visual effect services like Rotoscopy, Tracking &
-          MatchMove/Rotomation, Paint/Wire Removal/Clean up, Chroma/Keying for
-          Feature films, TV Series, Commercials etc. We also provide On Set VFX
-          Supervision and Film Production services.
-        </p>
+            Maximum Efforts Fx Studio Visual Effects Studio is a vfx outsourcing
+            service provider for visual effect services like Rotoscopy, Tracking
+            & MatchMove/Rotomation, Paint/Wire Removal/Clean up, Chroma/Keying
+            for Feature films, TV Series, Commercials etc. We also provide On
+            Set VFX Supervision and Film Production services.
+          </p>
           <Row>
             <Col md={4} className="mb-4">
               <Card className="bg-dark text-white">
@@ -243,7 +243,6 @@ const App = () => {
           </Row>
         </Container>
       </section>
-  
 
       <section
         id="work"
