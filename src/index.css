@@ -44,9 +44,10 @@
 }
 
 .navbar-dark {
-  background: rgba(255, 255, 255, 0.1); /* Light glassy background */
-  backdrop-filter: blur(10px); /* Blurred effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: rgb(255 255 255 / 0%); /* Light glassy background */
+  
+  backdrop-filter: blur(2px); /* Blurred effect */
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
   transition: background 0.3s ease-in-out;
 }

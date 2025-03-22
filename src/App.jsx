@@ -165,7 +165,7 @@ const App = () => {
         </div>
         
       </section>
-      <section className="text-center">
+      <section className="text-center" style={{background:'black'}}>
 
       <div className="m-1">
           <h3 style={{color:'#FFD700'}}>Trust</h3>
