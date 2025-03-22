@@ -75,7 +75,7 @@ const App = () => {
               onClick={() => scrollToSection("work")}
               className="text-white"
             >
-              Work
+              Projects
             </Nav.Link>
             <Nav.Link
               onClick={() => scrollToSection("contact")}
@@ -117,7 +117,7 @@ const App = () => {
               onClick={() => scrollToSection("work")}
               className="text-white"
             >
-              Work
+              Projects
             </Nav.Link>
             <Nav.Link
               onClick={() => scrollToSection("contact")}
@@ -281,7 +281,7 @@ const App = () => {
         style={{ paddingTop: "100px" }}
       >
         <Container>
-          <h2 className="mb-4">Work</h2>
+          <h2 className="mb-4">Projects</h2>
           <Row>
             {projectData.map((p) => {
               return (
