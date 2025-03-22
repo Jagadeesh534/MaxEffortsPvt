@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Container, Row, Col, Card } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Container,
+  Row,
+  Col,
+  Card,
+  Carousel,
+} from "react-bootstrap";
 import "./App.css";
-import bgVideo from "./assets/vfx.mp4";
+import bgVideo from "./assets/vfx_bg_eternals.mp4";
 import roto from "./assets/services/roto.jpg";
 import comp from "./assets/services/comp.jpg";
 import paint from "./assets/services/paint.jpg";
@@ -10,10 +18,7 @@ const images = import.meta.glob("/src/assets/projects/*.jpg", { eager: true });
 
 const App = () => {
   const [showNav, setShowNav] = useState(false);
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [projects, setProjects] = useState([]);
+  const currentYear = new Date().getFullYear();
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -129,19 +134,45 @@ const App = () => {
           <source src={bgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <div className="row">
         <h1 className="display-4 fw-bold text-center text-overlay">
           Experience the Future of VFX
         </h1>
+        <div>
+        <Carousel
+          indicators={true}
+          controls={false}
+          interval={3000}
+          className="text-carousel"
+        >
+          <Carousel.Item>
+            <h3 className="text-white text-center carousel-text">
+             We love VFX
+            </h3>
+          </Carousel.Item>
+          <Carousel.Item>
+            <h3 className="text-white text-center carousel-text">
+              We love cinema
+            </h3>
+          </Carousel.Item>
+          <Carousel.Item>
+            <h3 className="text-white text-center carousel-text">
+              We love pizza
+            </h3>
+          </Carousel.Item>
+        </Carousel>
+        </div>
+        </div>
       </section>
       <section
         id="about"
-        className="py-5 text-center"
+        className="pb-5 text-center"
         style={{ paddingTop: "80px" }}
       >
         <Container>
           <h2 className="mb-4 mt-2">About Us</h2>
           <p>
-            Maximum Efforts Fx studios established in 2023 and managed by ALLAM
+            Maximum Efforts Fx studios established in 2023 and managed by <i>KAVITA NANDAM & ALLAM</i>
             MAHENDRA, It is an Indian based creative visual effects studio that
             specializes in providing high quality outsourcing services for
             Films, Television & Advertisements. The studio is driven by some of
@@ -181,9 +212,9 @@ const App = () => {
           </ul>
         </Container>
       </section>
-      <section id="services" className="py-5 text-center">
+      <section id="services" className="service-padding text-center">
         <Container>
-          <h2 className="mb-4">Our Services</h2>
+          <h2 className="mb-4">Services</h2>
           <p>
             Maximum Efforts Fx Studio Visual Effects Studio is a vfx outsourcing
             service provider for visual effect services like Rotoscopy, Tracking
@@ -246,11 +277,11 @@ const App = () => {
 
       <section
         id="work"
-        className="py-5 text-center text-light"
-        style={{ paddingTop: "80px" }}
+        className="pb-5 text-center text-light"
+        style={{ paddingTop: "100px" }}
       >
         <Container>
-          <h2 className="mb-4">Our Work</h2>
+          <h2 className="mb-4">Work</h2>
           <Row>
             {projectData.map((p) => {
               return (
@@ -269,10 +300,10 @@ const App = () => {
 
       <section
         id="contact"
-        className="py-5 text-center"
+        className="pb-5"
         style={{ paddingTop: "100px", overflowY: "auto" }}
       >
-        <Container className="text-white py-5">
+        <Container className="text-white pb-5">
           <h2 className="text-danger fw-bold">Contact Office</h2>
           <p>
             <strong>Maximum Efforts Fx Studios</strong> <br />
@@ -304,10 +335,13 @@ const App = () => {
         </Container>
       </section>
       {/* Footer */}
-      <footer className="bg-black text-center py-3">
+      <footer className="bg-black text-center pb-3">
         <p className="mb-0">
-          &copy; 2025 Maximum Efforts VFX Pvt. Ltd. All Rights Reserved.
+          &copy; {currentYear} Maximum Efforts VFX Pvt. Ltd. All Rights Reserved.
         </p>
+        <p className="mb-0">
+    Designed & Developed by <i><strong>Jagadeesh .K</strong></i>
+  </p>
       </footer>
     </div>
   );

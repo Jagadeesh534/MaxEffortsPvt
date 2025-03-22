@@ -9,12 +9,16 @@
     right: -250px;
     width: 250px;
     height: 100%;
-    background: black;
+    background: #212529;
     transition: right 0.3s ease-in-out;
     padding-top: 60px;
   }
   .nav-slide.open {
     right: 0;
+  }
+  .navbar-nav{
+    background: #212529;
+    height: 100vh;
   }
   .close-btn {
     position: absolute;
@@ -26,4 +30,53 @@
     font-size: 24px;
     cursor: pointer;
   }
+
+.nav-slide {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-slide.open {
+  transform: translateX(0);
+}
+
+}
+
+.navbar-dark {
+  background: rgba(255, 255, 255, 0.1); /* Light glassy background */
+  backdrop-filter: blur(10px); /* Blurred effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+  transition: background 0.3s ease-in-out;
+}
+
+.service-padding{
+  padding-top: 6rem !important;
+  padding-bottom: 3rem !important;
+}
+.text-carousel {
+  margin-top: 20px;
+}
+
+.carousel-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.carousel-indicators{
+  margin-bottom: -4% !important;
 }
