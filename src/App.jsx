@@ -136,7 +136,7 @@ const App = () => {
         </video>
         <div className="row">
         <h1 className="display-4 fw-bold text-center text-overlay">
-          Experience the Future of VFX
+        Maxmium Efforts FX Studios
         </h1>
         <div>
         <Carousel
@@ -163,6 +163,15 @@ const App = () => {
         </Carousel>
         </div>
         </div>
+        
+      </section>
+      <section className="text-center">
+
+      <div className="m-1">
+          <h3 style={{color:'#FFD700'}}>Trust</h3>
+          <h2 className="mb-4">Services</h2>
+          <h4>Maxmium Efforts FX Studios is a vfx outsourcing service provider for visual effect services</h4>
+          </div>
       </section>
       <section
         id="about"
@@ -172,8 +181,8 @@ const App = () => {
         <Container>
           <h2 className="mb-4 mt-2">About Us</h2>
           <p>
-            Maximum Efforts Fx studios established in 2023 and managed by <i>KAVITA NANDAM & ALLAM</i>
-            MAHENDRA, It is an Indian based creative visual effects studio that
+            Maximum Efforts Fx studios established in 2023 and managed by <i>KAVITA NANDAM & ALLAM MAHENDRA, </i>
+            It is an Indian based creative visual effects studio that
             specializes in providing high quality outsourcing services for
             Films, Television & Advertisements. The studio is driven by some of
             the best minds from the industry, who have been expertise in all the
